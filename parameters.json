@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "networkInterfaceName": {
+            "value": "table2nrcoreosvm925"
+        },
+        "networkSecurityGroupName": {
+            "value": "table2nrcoreosvm-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "virtualNetworkName": {
+            "value": "table2nrcentosrg-vnet"
+        },
+        "addressPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "table2nrcoreosvm-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "table2nrcoreosvm"
+        },
+        "virtualMachineRG": {
+            "value": "table2nrcentosrg"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "azureops"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD6C0wslR4M4/85JQQi4XUJCoborfXOomDURjFlbtdBSg0gJdmU+wSqEemgRbScub643faccJsHSf+2FJOU6aRm/eodoxhg7tU/TIejmvl1dKNZPFeOWVKZY4UYDwh4AASvMlPnwjYk4/xmxXF5e2doy71QCZBQP5Vl4rbltliA452X9n2nLp2qQc+XdLP3vcYMhYsI4Pi6D090agqEEQDQVh0ixJ/zbLnm/6qRHHjJFBqwi+AS8htBP09bxqNvRzlFW+oVzyD+sFnoK2N9kJ9PT8GK9edC65PhI17LAuN8+f7bLRZfATf0HnJ+GrcpW2l5bQi/7R7Yyt9N6UdoBJ7z"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "table2nrcentosrgdiag"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/table2nrcentosrgdiag"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountKind": {
+            "value": "Storage"
+        }
+    }
+}
